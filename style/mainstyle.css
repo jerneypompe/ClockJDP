@@ -1,0 +1,63 @@
+html{
+	background-image: linear-gradient(to bottom, #FAF185, #FFBB00, #FB753D, #CD7AD3);
+	background-repeat: no-repeat;
+	height: 100%;
+	background-attachment: fixed; /*achtergrond voor de hele pagina, ook met scroll*/
+}
+.logo-img{
+	display: flex;
+	justify-content: center;
+}
+#logotop, #logobottom{
+	height: 25px;
+	width: 200px;
+}
+#logotop{
+	display: none;
+}
+#logobottom{
+	align-self: flex-end;
+}
+.clouds1, .clouds2, .clouds3{
+	width: 30%;
+	height: 30%;
+}
+.clouds2, .clouds3{
+	display: none;
+}
+.clouds1{
+	position: relative;
+	/*animation: test 5s infinite;*/
+}
+/*
+@keyframes test {
+  from {left: -100%;}
+  to {left: 100%;}
+}
+*/
+.cloud-animation{ /*= background-wrap*/
+	padding-top: 5%;
+	position: fixed;
+}
+@keyframes animateClouds{
+	0%{
+		margin-left: -1000px;
+	}
+	100%{
+		margin-left: 100%;
+	}
+}
+.c1{
+	animation: animateClouds 5s linear infinite;
+	transform: scale(0.65);
+}
+.clouds1:after{
+	height: 300px;
+	left: 50px;
+	top: -50px;
+}
+.clouds1:before{
+	height: 580px;
+	right: 50px;
+	top: -90px;
+}
