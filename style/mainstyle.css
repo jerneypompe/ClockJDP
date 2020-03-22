@@ -4,20 +4,30 @@ html{
 	height: 100%;
 	background-attachment: fixed; /*achtergrond voor de hele pagina, ook met scroll*/
 	font-family: verdana;
+	margin: 0;
 }
 .logo-img{
 	display: flex;
 	justify-content: center;
 }
 #logotop, #logobottom{
-	height: 25px;
-	width: 200px;
+	height: 18px;
+	width: 150px;
 }
 #logotop{
 	display: none;
 }
 #logobottom{
-	align-self: flex-end;
+	align-self: center;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	font-size: 8pt;
+}
+#copyright{
+	align-self: center;
+	font-family: Segoe Ui regular, sans-serif;
 }
 /*background cloud animation*/
 #cloud2, #cloud3, #cloud2-1, #cloud2-2, #cloud3-1, #cloud3-2{
@@ -30,6 +40,7 @@ section{
 }
 main{
 	z-index: 10;
+	min-height: 65vh;
 }
 .cloud-item{
 	position: fixed;
@@ -67,15 +78,35 @@ main{
 	max-height: 80%;
 }
 /*Einde background cloud animation*/
-/*Display klok*/
+/*Display klok en datum*/
 #clock{
 	display: flex;
 	justify-content: center;
-	font-size: 60px;
+	font-size: 50px;
 	color: #FFFFFF;
 	font-family: segoe ui regular, sans-serif;
+	margin-top: 30%;
 }
-
+#sun-moon {
+	width: 155px;
+    height: 165px;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+.sun-moon{
+	position: absolute;
+	z-index: -5;
+	top: 10%;
+	left: 25%;
+}
+#displayDate{
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+}
+.date{
+	margin-top: 20%;
+}
 /*Timezone dropdown list*/
 .timezones{
 	background-color: white;
@@ -86,10 +117,4 @@ main{
 .selectTimezone{
 	display: flex;
 	justify-content: center;
-}
-footer{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 8pt;
 }
