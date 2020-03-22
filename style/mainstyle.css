@@ -87,13 +87,26 @@ main{
 	font-family: segoe ui regular, sans-serif;
 	margin-top: 30%;
 }
-#sun-moon {
+/*Background maan en zon*/
+#moon {
 	width: 155px;
     height: 165px;
     background-repeat: no-repeat;
     align-self: center;
 }
-.sun-moon{
+.moon{
+	position: absolute;
+	z-index: -5;
+	top: 10%;
+	left: 25%;
+}
+#sun {
+	width: 234px;
+    height: 176px;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+.sun{
 	position: absolute;
 	z-index: -5;
 	top: 10%;

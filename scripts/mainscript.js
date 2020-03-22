@@ -29,24 +29,21 @@ document.getElementById('displayDate').innerHTML = formatDate;
 //Gradient verandering d.m.v. tijd
 var time = new Date().getHours();
 // 00.00 - 06.00 nacht
-if (0 >= time && time < 6) {
+if (time >= 0 && time < 6) {
 	document.documentElement.style.backgroundImage = "linear-gradient(to bottom, #000000, #08007B)";
-	document.getElementById("sun-moon").style.backgroundImage ="url('images/moon.png')";
 // 06.00 - 12 ochtend
-} else if (6 >= time && time < 12){
+} else if (time >= 6 && time < 12){
 	document.documentElement.style.backgroundImage = "linear-gradient(to bottom, #FAF185, #FFBB00, #FB753D, #CD7AD3)";
 // 12.00 - 18.00 middag
-} else if(12 >= time && time < 18){
+} else if(time >= 12 && time < 18){
 	document.documentElement.style.backgroundImage = "linear-gradient(to bottom, #2ADBFF, #768AFF, #CD7AD3)";
-	document.getElementById("sun-moon").style.backgroundImage ="url('images/sun.png')";
 // 18.00 - 00.00 avond
 } else {
 	document.documentElement.style.backgroundImage = "linear-gradient(to bottom, #2D2693, #BA28A6, #DB913C)";
 }
-
 //Dag / nacht verandering zon -> maan & maan -> zon
-// if (time >= 12 && time < 18){
-// 	document.getElementById("sun-moon").style.backgroundImage ="url('images/sun.png')";
-// } else {
-// 	document.getElementById("sun-moon").style.backgroundImage ="url('images/moon.png')";
-//}
+if (time >= 6 && time < 18){
+	document.getElementById("sun").style.backgroundImage ="url('images/sun.png')";
+} else {
+	document.getElementById("moon").style.backgroundImage ="url('images/moon.png')";
+}
