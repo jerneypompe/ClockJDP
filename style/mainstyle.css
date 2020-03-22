@@ -25,12 +25,10 @@ html{
 }
 section{
 	z-index: -10;
+	position: relative;
 }
 main{
 	z-index: 10;
-}
-.cloud-container{
-	z-index: -10;
 }
 .cloud-item{
 	position: fixed;
