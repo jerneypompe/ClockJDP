@@ -26,20 +26,42 @@ var months = ['January', 'February','March','April','May','June','July','August'
 var formatDate = months[today.getMonth()] + " " + today.getDate() + ", " + today.getFullYear();
 document.getElementById('displayDate').innerHTML = formatDate;
 
-//Gradient verandering d.m.v. tijd
+//Gradient, clouds, text verandering d.m.v. tijd
+/*Change clouds default = c1
+Dus ochtend niet aanpassen met img.src*/
 var time = new Date().getHours();
 // 00.00 - 06.00 nacht
 if (time >= 0 && time < 6) {
+	document.getElementById("displayDate").style.color = "#FFFFFF"; //verander datum kleur
 	document.documentElement.style.backgroundImage = "linear-gradient(to bottom, #000000, #08007B)";
+	var img = document.getElementById("c1");
+	img.src = "images/cloud3.png"
+	img = document.getElementById("c1-1");
+	img.src = "images/cloud3.png"
+	img = document.getElementById("c1-2");
+	img.src = "images/cloud3.png"
 // 06.00 - 12 ochtend
 } else if (time >= 6 && time < 12){
 	document.documentElement.style.backgroundImage = "linear-gradient(to bottom, #FAF185, #FFBB00, #FB753D, #CD7AD3)";
+	//Hier: cloud1.png
 // 12.00 - 18.00 middag
 } else if(time >= 12 && time < 18){
 	document.documentElement.style.backgroundImage = "linear-gradient(to bottom, #2ADBFF, #768AFF, #CD7AD3)";
+	var img = document.getElementById("c1");
+	img.src = "images/cloud2.png"
+	img = document.getElementById("c1-1");
+	img.src = "images/cloud2.png"
+	img = document.getElementById("c1-2");
+	img.src = "images/cloud2.png"
 // 18.00 - 00.00 avond
 } else {
 	document.documentElement.style.backgroundImage = "linear-gradient(to bottom, #2D2693, #BA28A6, #DB913C)";
+	img = document.getElementById("c1");
+	img.src = "images/cloud3.png"
+	img = document.getElementById("c1-1");
+	img.src = "images/cloud3.png"
+	img = document.getElementById("c1-2");
+	img.src = "images/cloud3.png"
 }
 //Dag / nacht verandering zon -> maan & maan -> zon
 if (time >= 6 && time < 18){

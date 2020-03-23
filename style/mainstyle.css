@@ -30,9 +30,9 @@ footer{
 	font-family: Segoe Ui regular, sans-serif;
 }
 /*background cloud animation*/
-#cloud2, #cloud3, #cloud2-1, #cloud2-2, #cloud3-1, #cloud3-2{
+/*#cloud2, #cloud3, #cloud2-1, #cloud2-2, #cloud3-1, #cloud3-2{
 	display: none;
-}
+}*/
 /*z-index achtergrond / voorgrond*/
 section{
 	z-index: -10;
