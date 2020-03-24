@@ -53,6 +53,7 @@ if (time >= 0 && time < 6) {
 	img.src = "images/cloud2.png"
 	img = document.getElementById("c1-2");
 	img.src = "images/cloud2.png"
+	document.getElementById("clock").style.color = "black";
 // 18.00 - 00.00 avond
 } else {
 	document.documentElement.style.backgroundImage = "linear-gradient(to bottom, #2D2693, #BA28A6, #DB913C)";
@@ -69,3 +70,4 @@ if (time >= 6 && time < 18){
 } else {
 	document.getElementById("moon").style.backgroundImage ="url('images/moon.png')";
 }
+
