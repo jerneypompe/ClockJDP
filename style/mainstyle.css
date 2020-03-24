@@ -26,9 +26,6 @@ footer{
 	flex-direction: column;
 	font-size: 8pt;
 }
-footer img{
-	display: none;
-}
 #copyright{
 	align-self: center;
 	font-family: Segoe Ui regular, sans-serif;

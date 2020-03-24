@@ -93,17 +93,18 @@
 		width: 220px;
 	}
 	#clock{
-		font-size: 90px;
+		font-size: 85px;
+		margin-top: 4%;
 	}
 	.date{
 		margin-top: 5%;
 	}
 	#displayDate{
-		font-size: 40px;
+		font-size: 30px;
 		justify-content: center;
 	}
 	.city{
-		font-size: 28px;
+		font-size: 22px;
 		font-weight: bold;
 		padding: 0.5em;
 		margin: 0 4em 0 4em;
@@ -111,9 +112,6 @@
 	}
 	#copyright{
 		font-size: 22px;
-	}
-	footer img{
-		display: inherit;
 	}
 }
 /*Laptop L*/
