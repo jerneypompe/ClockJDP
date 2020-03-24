@@ -6,7 +6,6 @@ html{
 	font-family: verdana;
 	margin: 0;
 }
-body{margin: 0;}
 .logo-img{
 	display: flex;
 	justify-content: center;
